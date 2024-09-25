@@ -38,14 +38,6 @@ export function FooterComponent() {
               </li>
               <li>
                 <Link
-                  href="/portfolio"
-                  className="text-sm text-gray-600 hover:text-purple-600"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/testimonials"
                   className="text-sm text-gray-600 hover:text-purple-600"
                 >
