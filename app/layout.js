@@ -3,6 +3,8 @@ import "./globals.css";
 import { HeaderComponent } from "@/components/header";
 import { FooterComponent } from "@/components/footer";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -90,6 +92,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <FooterComponent />
       </body>
+      <SpeedInsights />
     </html>
   );
 }
