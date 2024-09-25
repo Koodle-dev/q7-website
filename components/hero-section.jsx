@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function HeroSectionComponent() {
   return (
@@ -17,15 +18,19 @@ export function HeroSectionComponent() {
             </p>
           </div>
           <div className="space-x-4">
-            <Button className="bg-blue-200 text-blue-800 hover:bg-blue-300">
-              Get a Quote
-            </Button>
-            <Button
-              variant="outline"
-              className="border-pink-200 text-pink-800 hover:bg-pink-100"
-            >
-              Learn More
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-blue-200 text-blue-800 hover:bg-blue-300">
+                Get a Quote
+              </Button>
+            </Link>
+            <Link href="/services">
+              <Button
+                variant="outline"
+                className="border-pink-200 text-pink-800 hover:bg-pink-100"
+              >
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
